@@ -1,0 +1,11 @@
+{
+  "srting": "Ali",
+  "number": 100,
+  "object": {
+    "EG": "Elshrkia",
+    "KSA": "RiYad"
+  },
+  "array": ["HTML", "CSS", "Js"],
+  "boolen": "true",
+  "null": "null"
+}

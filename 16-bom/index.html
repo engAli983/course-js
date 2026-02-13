@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOM Examples</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        height: 3000px;
+      }
+      button {
+        background-color: #e74c3c;
+        border: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px 0;
+      }
+      button:hover { opacity: 0.8; }
+      div {
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 0;
+      }
+      ul {
+        padding: 0;
+        margin: 20px auto;
+        padding: 20px;
+        width: 400px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ddd;
+      }
+      ul li {
+        width: 60px;
+        height: 60px;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      ul li.active, ul li:hover { opacity: 1; }
+      ul li:nth-child(1) { background-color: red; }
+      ul li:nth-child(2) { background-color: green; }
+      ul li:nth-child(3) { background-color: blue; }
+      ul li:nth-child(4) { background-color: black; }
+    </style>
+  </head>
+  <body>
+    <h1>BOM Examples</h1>
+    <button>Stop Timer</button>
+    <div>5</div>
+
+    <h2>Color Picker (Local Storage)</h2>
+    <ul>
+      <li class="active" data-color="red"></li>
+      <li data-color="green"></li>
+      <li data-color="blue"></li>
+      <li data-color="black"></li>
+    </ul>
+    <div class="experiment" style="width: 400px; height: 200px; margin: 20px auto; background-color: red;"></div>
+
+    <script src="examples.js"></script>
+  </body>
+</html>
